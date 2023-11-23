@@ -9571,7 +9571,7 @@ PrefabInstance:
     - target: {fileID: 4692150162386345012, guid: 99ba8c9592233cd45840e3d7ac73df40,
         type: 3}
       propertyPath: m_text
-      value: 'Move around with WASD or arrow keys, move the camera with the mouse.
+      value: 'Move around with WASD. Turn with Q/E. Interact with objects with mouse.
 
 
         Find
