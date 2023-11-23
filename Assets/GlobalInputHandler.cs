@@ -10,7 +10,8 @@ public class GlobalInputHandler : MonoBehaviour
     {
         if (Input.GetKeyDown(popupCloseKey))
         {
-            FindObjectOfType<Canvas>().gameObject.SetActive(false);
+            FindObjectOfType<Canvas>().gameObject.SetActive(false); // might need to expand after specific popups
         }
+
     }
 }
