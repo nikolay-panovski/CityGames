@@ -7,6 +7,8 @@ public class GlobalInputHandler : MonoBehaviour
     private Canvas mainCanvas;
     private PhoneController phone;
 
+    public GameObject initPopup;
+
     public KeyCode popupCloseKey;
     public KeyCode phoneToggleKey;
 
@@ -20,7 +22,7 @@ public class GlobalInputHandler : MonoBehaviour
     {
         if (Input.GetKeyDown(popupCloseKey))
         {
-            mainCanvas.gameObject.SetActive(false); // might need to expand after specific popups
+            initPopup.SetActive(false);
         }
 
         if (Input.GetKeyDown(phoneToggleKey))
