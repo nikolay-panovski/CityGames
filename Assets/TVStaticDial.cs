@@ -4,12 +4,17 @@ using UnityEngine;
 
 public class TVStaticDial : MonoBehaviour
 {
+    public TVStaticSprite manipulatedStatic;
+    private SpriteRenderer staticSprite;
     public Camera mainCamera;
     public bool isRotatingDial;
+    public float dialRotation;
 
     void Start()
     {
         mainCamera = Camera.main;
+        staticSprite = manipulatedStatic.GetComponent<SpriteRenderer>();
+        dialRotation = manipulatedStatic.targetRotation + 180f;     // ensure the screen will start with full static
     }
 
     // Update is called once per frame
@@ -26,7 +31,15 @@ public class TVStaticDial : MonoBehaviour
 
         if (isRotatingDial)
         {
-            transform.rotation *= Quaternion.AngleAxis(Input.GetAxis("Mouse X"), Vector3.up);
+            float mouseMovement = Input.GetAxis("Mouse X");
+            transform.rotation *= Quaternion.AngleAxis(mouseMovement, Vector3.up);
+
+            dialRotation += mouseMovement;
+            if (dialRotation > 360f) dialRotation -= 360f;  // TODO: fix snap around 0 degrees due to "shortest angle difference"
+            if (dialRotation < 0f) dialRotation += 360f;
+
+            staticSprite.color = new Color(staticSprite.color.r, staticSprite.color.g, staticSprite.color.b,
+                                            Util.Remap(Mathf.Abs(manipulatedStatic.targetRotation - dialRotation), 0, 180, 0, 1));
         }
 
         if (Input.GetMouseButtonUp(0))
