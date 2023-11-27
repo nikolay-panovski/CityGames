@@ -9138,8 +9138,16 @@ PrefabInstance:
     - target: {fileID: 4692150162386345012, guid: 99ba8c9592233cd45840e3d7ac73df40,
         type: 3}
       propertyPath: m_text
-      value: something about the different rooms here and the "outside", visit in
-        any order
+      value: 'You will find multiple rooms as you walk around this demo.
+
+        Check
+        out all of them, in any order you''d like!
+
+
+        Find and solve the puzzles
+        in each room!
+
+        When you''re done, please fill out our survey.'
       objectReference: {fileID: 0}
     - target: {fileID: 4692150162386345012, guid: 99ba8c9592233cd45840e3d7ac73df40,
         type: 3}
@@ -9159,7 +9167,7 @@ PrefabInstance:
     - target: {fileID: 5504332465354089279, guid: 99ba8c9592233cd45840e3d7ac73df40,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 99ba8c9592233cd45840e3d7ac73df40, type: 3}
@@ -12502,7 +12510,7 @@ PrefabInstance:
     - target: {fileID: 5504332465354089279, guid: 99ba8c9592233cd45840e3d7ac73df40,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 99ba8c9592233cd45840e3d7ac73df40, type: 3}
