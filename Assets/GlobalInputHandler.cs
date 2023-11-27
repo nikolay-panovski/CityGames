@@ -4,19 +4,34 @@ using UnityEngine;
 
 public class GlobalInputHandler : MonoBehaviour
 {
+    private Canvas mainCanvas;
+    private PhoneController phone;
+
     public KeyCode popupCloseKey;
     public KeyCode phoneToggleKey;
+
+    private void Start()
+    {
+        mainCanvas = FindObjectOfType<Canvas>(includeInactive: true);
+        phone = FindObjectOfType<PhoneController>();
+    }
 
     void Update()
     {
         if (Input.GetKeyDown(popupCloseKey))
         {
-            FindObjectOfType<Canvas>().gameObject.SetActive(false); // might need to expand after specific popups
+            mainCanvas.gameObject.SetActive(false); // might need to expand after specific popups
         }
 
         if (Input.GetKeyDown(phoneToggleKey))
         {
-            // TODO: toggle between phone big screen and phone small icon on UI
+            TogglePhoneDisplay();
         }
+    }
+
+    public void TogglePhoneDisplay()
+    {
+        phone.currentScreen.gameObject.SetActive(phone.currentScreen.gameObject.activeSelf ^ true);
+        phone.phoneIcon.SetActive(!phone.currentScreen.gameObject.activeSelf);
     }
 }
