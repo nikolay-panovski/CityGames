@@ -54,12 +54,12 @@ public class TVPuzzleState : MonoBehaviour
             thisRoom.phoneScreen = phoneScreensSprites[(int)currentState];
             phone.UpdateScreen(thisRoom.phoneScreen);
 
-            FindObjectOfType<UIScore>().AddPoints(pointsOnAdvance);
+            FindObjectOfType<UIScore>().AddPoints(pointsOnAdvance); // also runs while the state is turning into COMPLETED,
+                                                                    // so COMPLETED points = this + pointsOnComplete (as intended)
         }
 
         if (currentState == RiddleState.TV_COMPLETED)
         {
-            FindObjectOfType<UIScore>().AddPoints(pointsOnAdvance);
             FindObjectOfType<UIScore>().AddPoints(pointsOnComplete);
         }
     }

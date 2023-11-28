@@ -13782,7 +13782,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pointsOnAdvance: 50
   pointsOnComplete: 100
-  thisRoom: {fileID: 1998389196}
+  thisRoom: {fileID: 1531954172}
   phoneScreensSprites:
   - {fileID: 92494149}
   - {fileID: 516085311}
@@ -14357,6 +14357,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1531954170}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1531954172 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5515403723981333192, guid: d9cacff762a97074f8eaf247959e6acd,
+    type: 3}
+  m_PrefabInstance: {fileID: 1531954170}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c8e3641c7d3fbf4dad762553c83a93a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1562884268
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17222,18 +17234,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1998389194}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1998389196 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5515403723981333192, guid: d9cacff762a97074f8eaf247959e6acd,
-    type: 3}
-  m_PrefabInstance: {fileID: 1998389194}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8c8e3641c7d3fbf4dad762553c83a93a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &2005036973
 PrefabInstance:
   m_ObjectHideFlags: 0
