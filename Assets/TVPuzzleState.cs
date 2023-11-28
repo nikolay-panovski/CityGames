@@ -38,12 +38,6 @@ public class TVPuzzleState : MonoBehaviour
         phone = FindObjectOfType<PhoneController>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void AdvanceState()
     {
         if (currentState < RiddleState.TV_COMPLETED)
