@@ -16,7 +16,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 22
   m_IsActive: 1
 --- !u!4 &8552717168196912002
 Transform:
@@ -157,6 +157,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BedPillow
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a30255044f824ae40803dfb83d5645c6,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 22
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a30255044f824ae40803dfb83d5645c6, type: 3}
 --- !u!4 &59713764708166132 stripped
@@ -236,6 +241,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BedPillow (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a30255044f824ae40803dfb83d5645c6,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a30255044f824ae40803dfb83d5645c6, type: 3}

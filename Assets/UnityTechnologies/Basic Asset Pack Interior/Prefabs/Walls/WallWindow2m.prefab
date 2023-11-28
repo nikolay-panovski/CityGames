@@ -16,7 +16,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 22
   m_IsActive: 1
 --- !u!4 &6594668457180463056
 Transform:
@@ -97,7 +97,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 22
   m_IsActive: 1
 --- !u!4 &1507073945385840591
 Transform:
@@ -135,7 +135,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 22
   m_IsActive: 1
 --- !u!4 &2093614395091678109
 Transform:
@@ -219,7 +219,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 22
   m_IsActive: 1
 --- !u!4 &5823831402130854981
 Transform:
@@ -315,7 +315,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 22
   m_IsActive: 1
 --- !u!4 &6683729134735948311
 Transform:
@@ -389,6 +389,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1507073945385840591}
     m_Modifications:
+    - target: {fileID: -9036956567699738537, guid: 7b993b5437c36da42a57c50b3986453d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 22
+      objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7b993b5437c36da42a57c50b3986453d,
         type: 3}
       propertyPath: m_RootOrder
@@ -454,11 +459,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: WallWindow2mCurtain
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7b993b5437c36da42a57c50b3986453d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 22
+      objectReference: {fileID: 0}
     - target: {fileID: 4759451772920427857, guid: 7b993b5437c36da42a57c50b3986453d,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 3252fda813d817e4a8cdc21a1aa09354, type: 2}
+    - target: {fileID: 6250995865942746429, guid: 7b993b5437c36da42a57c50b3986453d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 22
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7b993b5437c36da42a57c50b3986453d, type: 3}
 --- !u!4 &4130867803546663829 stripped

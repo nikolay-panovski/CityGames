@@ -11,12 +11,13 @@ GameObject:
   - component: {fileID: 863274816247114712}
   - component: {fileID: 4347429713178535037}
   - component: {fileID: 1995616918818312375}
+  - component: {fileID: 6515268724714722526}
   m_Layer: 0
   m_Name: ShelvesMediumA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 22
   m_IsActive: 1
 --- !u!4 &863274816247114712
 Transform:
@@ -83,3 +84,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &6515268724714722526
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 49864448021852514}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.76727986, y: 2.838236, z: 2.8388455}
+  m_Center: {x: 0.00000037252903, y: 1.4010986, z: -0.00000011920929}
