@@ -9,18 +9,7 @@ public class PhoneController : MonoBehaviour
     public PhoneScreen currentScreen;
     public PhoneScreen previousScreen;
 
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public PhoneScreen wrongAnswerScreen;
 
     public void UpdateScreen(PhoneScreen newScreen)
     {

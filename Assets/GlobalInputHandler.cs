@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class GlobalInputHandler : MonoBehaviour
 {
-    private Canvas mainCanvas;
     private PhoneController phone;
 
     public GameObject initPopup;
@@ -14,7 +13,6 @@ public class GlobalInputHandler : MonoBehaviour
 
     private void Start()
     {
-        mainCanvas = FindObjectOfType<Canvas>(includeInactive: true);
         phone = FindObjectOfType<PhoneController>();
     }
 

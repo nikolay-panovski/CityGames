@@ -47,4 +47,12 @@ public class TVStaticDial : MonoBehaviour
             isRotatingDial = false;
         }
     }
+
+    public void ResetStatic()
+    {
+        staticSprite.color = Color.white;
+        manipulatedStatic.targetRotation += 180f;
+        if (manipulatedStatic.targetRotation > 360f) manipulatedStatic.targetRotation -= 360f;
+        if (manipulatedStatic.targetRotation < 0f) manipulatedStatic.targetRotation += 360f;
+    }
 }
