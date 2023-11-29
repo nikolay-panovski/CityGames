@@ -25,8 +25,11 @@ public class QRClickable : MonoBehaviour
             Ray fromMouse = mainCamera.ScreenPointToRay(new Vector3(Input.mousePosition.x, Input.mousePosition.y));
             if (Physics.Raycast(fromMouse, out RaycastHit hit))
             {
-                if (hit.collider == thisCollider) OnQRCollect.Invoke();
-                this.gameObject.SetActive(false);
+                if (hit.collider == thisCollider)
+                {
+                    OnQRCollect.Invoke();
+                    this.gameObject.SetActive(false);
+                }
             }
         }
     }
