@@ -6,6 +6,7 @@ public class TVStaticDial : MonoBehaviour
 {
     public TVStaticSprite manipulatedStatic;
     private SpriteRenderer staticSprite;
+    private Collider thisCollider;
     public Camera mainCamera;
     public bool isRotatingDial;
     public float dialRotation;
@@ -14,6 +15,7 @@ public class TVStaticDial : MonoBehaviour
     {
         mainCamera = Camera.main;
         staticSprite = manipulatedStatic.GetComponent<SpriteRenderer>();
+        thisCollider = GetComponent<Collider>();
         dialRotation = manipulatedStatic.targetRotation + 180f;     // ensure the screen will start with full static
     }
 
@@ -23,9 +25,9 @@ public class TVStaticDial : MonoBehaviour
         if (Input.GetMouseButton(0))
         {
             Ray fromMouse = mainCamera.ScreenPointToRay(new Vector3(Input.mousePosition.x, Input.mousePosition.y));
-            if (Physics.Raycast(fromMouse))
+            if (Physics.Raycast(fromMouse, out RaycastHit hit))
             {
-                isRotatingDial = true;
+                if (hit.collider == thisCollider) isRotatingDial = true;
             }
         }
 

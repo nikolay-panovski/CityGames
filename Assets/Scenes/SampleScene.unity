@@ -19220,6 +19220,7 @@ GameObject:
   - component: {fileID: 1233167899}
   - component: {fileID: 1233167900}
   - component: {fileID: 1233167901}
+  - component: {fileID: 1233167902}
   m_Layer: 0
   m_Name: MorseCode_Paper_Small
   m_TagString: Untagged
@@ -19234,14 +19235,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1233167898}
-  m_LocalRotation: {x: 0.031640396, y: 0.72468394, z: -0.68769944, w: 0.030025614}
-  m_LocalPosition: {x: 1.756, y: 0.074, z: -15.874}
+  m_LocalRotation: {x: 0.13105394, y: 0.7432439, z: -0.646092, w: 0.11392344}
+  m_LocalPosition: {x: 1.821, y: 0.074, z: -15.639}
   m_LocalScale: {x: 0.08, y: 0.08, z: 0.08}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 919862259}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 87, y: 180, z: 5}
+  m_LocalEulerAnglesHint: {x: 82, y: 180, z: 20}
 --- !u!212 &1233167900
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -19308,6 +19309,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainCamera: {fileID: 0}
   paperBig: {fileID: 1752335999}
+--- !u!65 &1233167902
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1233167898}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 11.999998, y: 14.44, z: 0.2000002}
+  m_Center: {x: 0, y: 0, z: -0.0000009536743}
 --- !u!1 &1238831095
 GameObject:
   m_ObjectHideFlags: 0
