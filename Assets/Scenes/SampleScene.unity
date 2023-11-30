@@ -1808,11 +1808,12 @@ PrefabInstance:
     - target: {fileID: 7388486863042781795, guid: ac6efc9eb5215344d99aeefcd16f17fc,
         type: 3}
       propertyPath: m_text
-      value: 'A history question is supposed to appear here, but the phone can''t
-        read it...
+      value: 'These answers belong to a history question, but the phone can''t decode
+        this one... You need to find the question elsewhere.
 
 
-        Choose the correct answer!'
+        Choose the
+        correct answer!'
       objectReference: {fileID: 0}
     - target: {fileID: 7388486863042781795, guid: ac6efc9eb5215344d99aeefcd16f17fc,
         type: 3}
@@ -3391,11 +3392,11 @@ PrefabInstance:
     - target: {fileID: 7388486863042781795, guid: ac6efc9eb5215344d99aeefcd16f17fc,
         type: 3}
       propertyPath: m_text
-      value: 'A history question is supposed to appear here, but the phone can''t
-        read it...
+      value: 'Decode and answer the final question!
 
 
-        Choose the correct answer!'
+        Choose the correct
+        answer!'
       objectReference: {fileID: 0}
     - target: {fileID: 7388486863042781795, guid: ac6efc9eb5215344d99aeefcd16f17fc,
         type: 3}
@@ -11409,6 +11410,202 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 470302163}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &472778427
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1014180491}
+    m_Modifications:
+    - target: {fileID: 7388486861583252480, guid: ac6efc9eb5215344d99aeefcd16f17fc,
+        type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7388486861583252480, guid: ac6efc9eb5215344d99aeefcd16f17fc,
+        type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7388486861583252480, guid: ac6efc9eb5215344d99aeefcd16f17fc,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 7388486861583252480, guid: ac6efc9eb5215344d99aeefcd16f17fc,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7388486861583252480, guid: ac6efc9eb5215344d99aeefcd16f17fc,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7388486861583252480, guid: ac6efc9eb5215344d99aeefcd16f17fc,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7388486861583252480, guid: ac6efc9eb5215344d99aeefcd16f17fc,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7388486861583252480, guid: ac6efc9eb5215344d99aeefcd16f17fc,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 768
+      objectReference: {fileID: 0}
+    - target: {fileID: 7388486861583252480, guid: ac6efc9eb5215344d99aeefcd16f17fc,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 1024
+      objectReference: {fileID: 0}
+    - target: {fileID: 7388486861583252480, guid: ac6efc9eb5215344d99aeefcd16f17fc,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7388486861583252480, guid: ac6efc9eb5215344d99aeefcd16f17fc,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7388486861583252480, guid: ac6efc9eb5215344d99aeefcd16f17fc,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7388486861583252480, guid: ac6efc9eb5215344d99aeefcd16f17fc,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7388486861583252480, guid: ac6efc9eb5215344d99aeefcd16f17fc,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7388486861583252480, guid: ac6efc9eb5215344d99aeefcd16f17fc,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7388486861583252480, guid: ac6efc9eb5215344d99aeefcd16f17fc,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7388486861583252480, guid: ac6efc9eb5215344d99aeefcd16f17fc,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7388486861583252480, guid: ac6efc9eb5215344d99aeefcd16f17fc,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7388486861583252480, guid: ac6efc9eb5215344d99aeefcd16f17fc,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7388486861583252480, guid: ac6efc9eb5215344d99aeefcd16f17fc,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7388486861583252480, guid: ac6efc9eb5215344d99aeefcd16f17fc,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7388486861583252481, guid: ac6efc9eb5215344d99aeefcd16f17fc,
+        type: 3}
+      propertyPath: m_Name
+      value: PhoneUI_PPSolvedCastle
+      objectReference: {fileID: 0}
+    - target: {fileID: 7388486861583252481, guid: ac6efc9eb5215344d99aeefcd16f17fc,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7388486863042781795, guid: ac6efc9eb5215344d99aeefcd16f17fc,
+        type: 3}
+      propertyPath: m_text
+      value: 'You answered all the questions of the castle!
+
+
+        The lights
+        now point the full way to the real treasure at the end...'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7388486863042781795, guid: ac6efc9eb5215344d99aeefcd16f17fc,
+        type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 256
+      objectReference: {fileID: 0}
+    - target: {fileID: 7388486863042781805, guid: ac6efc9eb5215344d99aeefcd16f17fc,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8729908272459102216, guid: ac6efc9eb5215344d99aeefcd16f17fc,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8729908272459102216, guid: ac6efc9eb5215344d99aeefcd16f17fc,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8729908272459102216, guid: ac6efc9eb5215344d99aeefcd16f17fc,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 692913704}
+    - target: {fileID: 8729908272459102216, guid: ac6efc9eb5215344d99aeefcd16f17fc,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8729908272459102216, guid: ac6efc9eb5215344d99aeefcd16f17fc,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: TogglePhoneDisplay
+      objectReference: {fileID: 0}
+    - target: {fileID: 8729908272459102216, guid: ac6efc9eb5215344d99aeefcd16f17fc,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: GlobalInputHandler, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8729908272459102216, guid: ac6efc9eb5215344d99aeefcd16f17fc,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ac6efc9eb5215344d99aeefcd16f17fc, type: 3}
+--- !u!224 &472778428 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 7388486861583252480, guid: ac6efc9eb5215344d99aeefcd16f17fc,
+    type: 3}
+  m_PrefabInstance: {fileID: 472778427}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &472778429 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 761028888647810228, guid: ac6efc9eb5215344d99aeefcd16f17fc,
+    type: 3}
+  m_PrefabInstance: {fileID: 472778427}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7f029c48241ff54c9821f9fb60a67a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &473169267
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12116,8 +12313,7 @@ PrefabInstance:
     - target: {fileID: 7388486863042781795, guid: ac6efc9eb5215344d99aeefcd16f17fc,
         type: 3}
       propertyPath: m_text
-      value: 'A history question is supposed to appear here, but the phone can''t
-        read it...
+      value: 'Decode and answer the next question!
 
 
         Choose the correct answer!'
@@ -13962,7 +14158,6 @@ MonoBehaviour:
   manipulatedStatic: {fileID: 0}
   mainCamera: {fileID: 0}
   isRotatingDial: 0
-  dialRotation: 0
 --- !u!1001 &583299298
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20913,7 +21108,7 @@ MonoBehaviour:
   - {fileID: 1598841119}
   - {fileID: 2079956981}
   - {fileID: 993569527}
-  - {fileID: 2030525267}
+  - {fileID: 472778429}
   currentState: 10
 --- !u!1001 &863122044
 PrefabInstance:
@@ -25005,8 +25200,15 @@ PrefabInstance:
     - target: {fileID: 7388486863042781795, guid: ac6efc9eb5215344d99aeefcd16f17fc,
         type: 3}
       propertyPath: m_text
-      value: Which of these numbers increases by 12 when it is flipped and turned
-        upside down?
+      value: 'Question 1 solved!
+
+        Question 2 solved!
+
+        Question 3/3:
+
+
+        Which
+        of these numbers increases by 12 when it is flipped and turned upside down?'
       objectReference: {fileID: 0}
     - target: {fileID: 7388486863042781795, guid: ac6efc9eb5215344d99aeefcd16f17fc,
         type: 3}
@@ -25278,6 +25480,8 @@ RectTransform:
   - {fileID: 1814285905}
   - {fileID: 1343068545}
   - {fileID: 2030525266}
+  - {fileID: 1702282699}
+  - {fileID: 472778428}
   - {fileID: 1720736887}
   m_Father: {fileID: 783833140}
   m_RootOrder: 2
@@ -25949,7 +26153,6 @@ MonoBehaviour:
   manipulatedStatic: {fileID: 848732673}
   mainCamera: {fileID: 0}
   isRotatingDial: 0
-  dialRotation: 0
 --- !u!1001 &1039178864
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -39402,17 +39605,17 @@ PrefabInstance:
     - target: {fileID: 9046731285892509680, guid: e2ba95120176ae9469627601538c98a0,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.4
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 9046731285892509680, guid: e2ba95120176ae9469627601538c98a0,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.4
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 9046731285892509680, guid: e2ba95120176ae9469627601538c98a0,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.4
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 9046731285892509680, guid: e2ba95120176ae9469627601538c98a0,
         type: 3}
@@ -39427,7 +39630,7 @@ PrefabInstance:
     - target: {fileID: 9046731285892509680, guid: e2ba95120176ae9469627601538c98a0,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 9.005616
+      value: 8.482272
       objectReference: {fileID: 0}
     - target: {fileID: 9046731285892509680, guid: e2ba95120176ae9469627601538c98a0,
         type: 3}
@@ -40426,7 +40629,11 @@ PrefabInstance:
     - target: {fileID: 7388486863042781795, guid: ac6efc9eb5215344d99aeefcd16f17fc,
         type: 3}
       propertyPath: m_text
-      value: What is the closest planet to the Sun in our solar system?
+      value: 'Question 1/3:
+
+
+        What is the closest planet to the Sun in our
+        solar system?'
       objectReference: {fileID: 0}
     - target: {fileID: 7388486863042781795, guid: ac6efc9eb5215344d99aeefcd16f17fc,
         type: 3}
@@ -40858,7 +41065,7 @@ MonoBehaviour:
         m_MethodName: UpdatePhoneScreen
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 2030525267}
+          m_ObjectArgument: {fileID: 1702282700}
           m_ObjectArgumentAssemblyTypeName: PhoneScreen, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -40870,24 +41077,12 @@ MonoBehaviour:
         m_MethodName: UpdateScreen
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 2030525267}
+          m_ObjectArgument: {fileID: 1702282700}
           m_ObjectArgumentAssemblyTypeName: PhoneScreen, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1461099319}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &1606598450
 MonoBehaviour:
@@ -43387,6 +43582,207 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1697495229}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1702282698
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1014180491}
+    m_Modifications:
+    - target: {fileID: 7388486861583252480, guid: ac6efc9eb5215344d99aeefcd16f17fc,
+        type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7388486861583252480, guid: ac6efc9eb5215344d99aeefcd16f17fc,
+        type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7388486861583252480, guid: ac6efc9eb5215344d99aeefcd16f17fc,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 7388486861583252480, guid: ac6efc9eb5215344d99aeefcd16f17fc,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7388486861583252480, guid: ac6efc9eb5215344d99aeefcd16f17fc,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7388486861583252480, guid: ac6efc9eb5215344d99aeefcd16f17fc,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7388486861583252480, guid: ac6efc9eb5215344d99aeefcd16f17fc,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7388486861583252480, guid: ac6efc9eb5215344d99aeefcd16f17fc,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 768
+      objectReference: {fileID: 0}
+    - target: {fileID: 7388486861583252480, guid: ac6efc9eb5215344d99aeefcd16f17fc,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 1024
+      objectReference: {fileID: 0}
+    - target: {fileID: 7388486861583252480, guid: ac6efc9eb5215344d99aeefcd16f17fc,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7388486861583252480, guid: ac6efc9eb5215344d99aeefcd16f17fc,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7388486861583252480, guid: ac6efc9eb5215344d99aeefcd16f17fc,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7388486861583252480, guid: ac6efc9eb5215344d99aeefcd16f17fc,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7388486861583252480, guid: ac6efc9eb5215344d99aeefcd16f17fc,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7388486861583252480, guid: ac6efc9eb5215344d99aeefcd16f17fc,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7388486861583252480, guid: ac6efc9eb5215344d99aeefcd16f17fc,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7388486861583252480, guid: ac6efc9eb5215344d99aeefcd16f17fc,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7388486861583252480, guid: ac6efc9eb5215344d99aeefcd16f17fc,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7388486861583252480, guid: ac6efc9eb5215344d99aeefcd16f17fc,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7388486861583252480, guid: ac6efc9eb5215344d99aeefcd16f17fc,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7388486861583252480, guid: ac6efc9eb5215344d99aeefcd16f17fc,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7388486861583252481, guid: ac6efc9eb5215344d99aeefcd16f17fc,
+        type: 3}
+      propertyPath: m_Name
+      value: PhoneUI_PPSolvedSquare
+      objectReference: {fileID: 0}
+    - target: {fileID: 7388486861583252481, guid: ac6efc9eb5215344d99aeefcd16f17fc,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7388486863042781795, guid: ac6efc9eb5215344d99aeefcd16f17fc,
+        type: 3}
+      propertyPath: m_text
+      value: 'This square is indeed named Europe Square!
+
+
+        Fun fact: The
+        real location does not have a fountain.
+
+
+        However, the fountain is
+        not the only thing of value here - look (click) around and behind the bench,
+        and you might find a real treasure...'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7388486863042781795, guid: ac6efc9eb5215344d99aeefcd16f17fc,
+        type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 256
+      objectReference: {fileID: 0}
+    - target: {fileID: 7388486863042781805, guid: ac6efc9eb5215344d99aeefcd16f17fc,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8729908272459102216, guid: ac6efc9eb5215344d99aeefcd16f17fc,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8729908272459102216, guid: ac6efc9eb5215344d99aeefcd16f17fc,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8729908272459102216, guid: ac6efc9eb5215344d99aeefcd16f17fc,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 692913704}
+    - target: {fileID: 8729908272459102216, guid: ac6efc9eb5215344d99aeefcd16f17fc,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8729908272459102216, guid: ac6efc9eb5215344d99aeefcd16f17fc,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: TogglePhoneDisplay
+      objectReference: {fileID: 0}
+    - target: {fileID: 8729908272459102216, guid: ac6efc9eb5215344d99aeefcd16f17fc,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: GlobalInputHandler, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8729908272459102216, guid: ac6efc9eb5215344d99aeefcd16f17fc,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ac6efc9eb5215344d99aeefcd16f17fc, type: 3}
+--- !u!224 &1702282699 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 7388486861583252480, guid: ac6efc9eb5215344d99aeefcd16f17fc,
+    type: 3}
+  m_PrefabInstance: {fileID: 1702282698}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1702282700 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 761028888647810228, guid: ac6efc9eb5215344d99aeefcd16f17fc,
+    type: 3}
+  m_PrefabInstance: {fileID: 1702282698}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7f029c48241ff54c9821f9fb60a67a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1707928679
 GameObject:
   m_ObjectHideFlags: 0
@@ -43620,7 +44016,7 @@ PrefabInstance:
     - target: {fileID: 7388486861583252480, guid: ac6efc9eb5215344d99aeefcd16f17fc,
         type: 3}
       propertyPath: m_RootOrder
-      value: 15
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 7388486861583252480, guid: ac6efc9eb5215344d99aeefcd16f17fc,
         type: 3}
@@ -43735,7 +44131,7 @@ PrefabInstance:
         thank you for playing!
 
 
-        It would help us a lot now to fill in a
+        It would help us a lot now to fill in the
         survey about your experience with these puzzles.'
       objectReference: {fileID: 0}
     - target: {fileID: 7388486863042781795, guid: ac6efc9eb5215344d99aeefcd16f17fc,
@@ -51086,7 +51482,13 @@ PrefabInstance:
     - target: {fileID: 7388486863042781795, guid: ac6efc9eb5215344d99aeefcd16f17fc,
         type: 3}
       propertyPath: m_text
-      value: What is the chemical symbol for water?
+      value: 'Question 1 solved!
+
+        Question 2/3:
+
+
+        What is the chemical
+        symbol for water?'
       objectReference: {fileID: 0}
     - target: {fileID: 7388486863042781795, guid: ac6efc9eb5215344d99aeefcd16f17fc,
         type: 3}
