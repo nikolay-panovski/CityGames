@@ -8,6 +8,7 @@ public class PhoneController : MonoBehaviour
     public PhoneScreen defaultScreen;
     public PhoneScreen currentScreen;
     public PhoneScreen previousScreen;
+    public PhoneScreen finalScreen;
 
     public PhoneScreen wrongAnswerScreen;
 

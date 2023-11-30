@@ -13,7 +13,11 @@ public enum RiddleState
     MORSE_Q1        = 6,
     MORSE_Q2        = 7,
     MORSE_Q3        = 8,
-    MORSE_COMPLETED = 9
+    MORSE_COMPLETED = 9,
+    CASTLE_Q1       = 10,
+    CASTLE_Q2       = 11,
+    CASTLE_Q3       = 12,
+    CASTLE_COMPLETED = 13
 }
 
 public class TVPuzzleState : MonoBehaviour
