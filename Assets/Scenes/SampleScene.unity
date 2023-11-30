@@ -24416,12 +24416,15 @@ PrefabInstance:
     - target: {fileID: 7388486863042781795, guid: ac6efc9eb5215344d99aeefcd16f17fc,
         type: 3}
       propertyPath: m_text
-      value: 'Type the keyword you recognized below!
+      value: 'Word 1 correct!
 
-        (Word 2/3)
 
-        (X
-        letters)'
+        Type the keyword you recognized below!
+
+        (Word
+        2/3)
+
+        (X letters)'
       objectReference: {fileID: 0}
     - target: {fileID: 7388486863042781795, guid: ac6efc9eb5215344d99aeefcd16f17fc,
         type: 3}
@@ -52418,12 +52421,17 @@ PrefabInstance:
     - target: {fileID: 7388486863042781795, guid: ac6efc9eb5215344d99aeefcd16f17fc,
         type: 3}
       propertyPath: m_text
-      value: 'Type the keyword you recognized below!
+      value: 'Word 1 correct!
+
+        Word 2 correct!
+
+
+        Type the keyword
+        you recognized below!
 
         (Word 3/3)
 
-        (X
-        letters)'
+        (X letters)'
       objectReference: {fileID: 0}
     - target: {fileID: 7388486863042781795, guid: ac6efc9eb5215344d99aeefcd16f17fc,
         type: 3}
