@@ -36153,6 +36153,7 @@ MonoBehaviour:
   - {fileID: 1561523511}
   blinkMaterialOff: {fileID: 2100000, guid: f6c33c86cef87a745afa6b65e1a72609, type: 2}
   blinkMaterialOn: {fileID: 2100000, guid: f218cb13300b2f3479f9b3688080f80e, type: 2}
+  blinkMaterialEnd: {fileID: 2100000, guid: b424591d9b6fa564b803a55c8f0bb3e2, type: 2}
   timeUnit: 0.33
 --- !u!1001 &1426620663
 PrefabInstance:

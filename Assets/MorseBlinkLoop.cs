@@ -9,6 +9,7 @@ public class MorseBlinkLoop : MonoBehaviour
     public List<Renderer> blinkers;
     public Material blinkMaterialOff;
     public Material blinkMaterialOn;
+    public Material blinkMaterialEnd;
 
     public float timeUnit = 0.25f;
     private float BLINK_DOT;
@@ -33,136 +34,50 @@ public class MorseBlinkLoop : MonoBehaviour
 
     public IEnumerator Loop(string word)
     {
-        switch (word)
+        foreach (Renderer blinkerRenderer in blinkers)  // scrapped, there is now only 1 renderer (this wouldn't work with 2 anyway)
         {
-            case "it":
-                foreach (Renderer blinkerRenderer in blinkers)
-                {
-                    blinkerRenderer.material = blinkMaterialOn;
-                    yield return new WaitForSeconds(BLINK_DOT);
-                    blinkerRenderer.material = blinkMaterialOff;
-                    yield return new WaitForSeconds(BLINK_SPACE_LOCAL);
-                    blinkerRenderer.material = blinkMaterialOn;
-                    yield return new WaitForSeconds(BLINK_DOT);
+            switch (word)
+            {
+                case "it":
+                    yield return BlinkSequence(blinkerRenderer, blinkMaterialOn, blinkMaterialOff,
+                        BLINK_DOT, BLINK_SPACE_LOCAL, BLINK_DOT, BLINK_SPACE_LETTERS,
+                        BLINK_DASH, BLINK_SPACE_REPEAT);
+                    break;
 
-                    blinkerRenderer.material = blinkMaterialOff;
-                    yield return new WaitForSeconds(BLINK_SPACE_LETTERS);
-                    blinkerRenderer.material = blinkMaterialOn;
-                    yield return new WaitForSeconds(BLINK_DASH);
-                    blinkerRenderer.material = blinkMaterialOff;
-                    yield return new WaitForSeconds(BLINK_SPACE_REPEAT);
+                case "city":
+                    yield return BlinkSequence(blinkerRenderer, blinkMaterialOn, blinkMaterialOff,
+                        BLINK_DASH, BLINK_SPACE_LOCAL, BLINK_DOT, BLINK_SPACE_LOCAL, BLINK_DASH, BLINK_SPACE_LOCAL, BLINK_DOT, BLINK_SPACE_LETTERS,
+                        BLINK_DOT, BLINK_SPACE_LOCAL, BLINK_DOT, BLINK_SPACE_LETTERS,
+                        BLINK_DASH, BLINK_SPACE_LETTERS,
+                        BLINK_DASH, BLINK_SPACE_LOCAL, BLINK_DOT, BLINK_SPACE_LOCAL, BLINK_DASH, BLINK_SPACE_LOCAL, BLINK_DASH, BLINK_SPACE_REPEAT);
+                    break;
 
-                    StartNewWordLoop(word);
-                }
-                break;
-            case "city":
-                foreach (Renderer blinkerRenderer in blinkers)
-                {
-                    blinkerRenderer.material = blinkMaterialOn;
-                    yield return new WaitForSeconds(BLINK_DASH);
-                    blinkerRenderer.material = blinkMaterialOff;
-                    yield return new WaitForSeconds(BLINK_SPACE_LOCAL);
-                    blinkerRenderer.material = blinkMaterialOn;
-                    yield return new WaitForSeconds(BLINK_DOT);
-                    blinkerRenderer.material = blinkMaterialOff;
-                    yield return new WaitForSeconds(BLINK_SPACE_LOCAL);
-                    blinkerRenderer.material = blinkMaterialOn;
-                    yield return new WaitForSeconds(BLINK_DASH);
-                    blinkerRenderer.material = blinkMaterialOff;
-                    yield return new WaitForSeconds(BLINK_SPACE_LOCAL);
-                    blinkerRenderer.material = blinkMaterialOn;
-                    yield return new WaitForSeconds(BLINK_DOT);
+                case "train":
+                    yield return BlinkSequence(blinkerRenderer, blinkMaterialOn, blinkMaterialOff,
+                        BLINK_DASH, BLINK_SPACE_LETTERS,
+                        BLINK_DOT, BLINK_SPACE_LOCAL, BLINK_DASH, BLINK_SPACE_LOCAL, BLINK_DOT, BLINK_SPACE_LETTERS,
+                        BLINK_DOT, BLINK_SPACE_LOCAL, BLINK_DASH, BLINK_SPACE_LETTERS,
+                        BLINK_DOT, BLINK_SPACE_LOCAL, BLINK_DOT, BLINK_SPACE_LETTERS,
+                        BLINK_DASH, BLINK_SPACE_LOCAL, BLINK_DOT, BLINK_SPACE_REPEAT);
+                    break;
 
-                    blinkerRenderer.material = blinkMaterialOff;
-                    yield return new WaitForSeconds(BLINK_SPACE_LETTERS);
-                    blinkerRenderer.material = blinkMaterialOn;
-                    yield return new WaitForSeconds(BLINK_DOT);
-                    blinkerRenderer.material = blinkMaterialOff;
-                    yield return new WaitForSeconds(BLINK_SPACE_LOCAL);
-                    blinkerRenderer.material = blinkMaterialOn;
-                    yield return new WaitForSeconds(BLINK_DOT);
+                default:
+                    if (currentLoop != null) StopCoroutine(currentLoop);
+                    yield break;
+            }
+        }
+        StartNewWordLoop(word);
+    }
 
-                    blinkerRenderer.material = blinkMaterialOff;
-                    yield return new WaitForSeconds(BLINK_SPACE_LETTERS);
-                    blinkerRenderer.material = blinkMaterialOn;
-                    yield return new WaitForSeconds(BLINK_DASH);
-
-                    blinkerRenderer.material = blinkMaterialOff;
-                    yield return new WaitForSeconds(BLINK_SPACE_LETTERS);
-                    blinkerRenderer.material = blinkMaterialOn;
-                    yield return new WaitForSeconds(BLINK_DASH);
-                    blinkerRenderer.material = blinkMaterialOff;
-                    yield return new WaitForSeconds(BLINK_SPACE_LOCAL);
-                    blinkerRenderer.material = blinkMaterialOn;
-                    yield return new WaitForSeconds(BLINK_DOT);
-                    blinkerRenderer.material = blinkMaterialOff;
-                    yield return new WaitForSeconds(BLINK_SPACE_LOCAL);
-                    blinkerRenderer.material = blinkMaterialOn;
-                    yield return new WaitForSeconds(BLINK_DASH);
-                    blinkerRenderer.material = blinkMaterialOff;
-                    yield return new WaitForSeconds(BLINK_SPACE_LOCAL);
-                    blinkerRenderer.material = blinkMaterialOn;
-                    yield return new WaitForSeconds(BLINK_DASH);
-                    blinkerRenderer.material = blinkMaterialOff;
-                    yield return new WaitForSeconds(BLINK_SPACE_REPEAT);
-
-                    StartNewWordLoop(word);
-                }
-                break;
-            case "train":
-                foreach (Renderer blinkerRenderer in blinkers)
-                {
-                    blinkerRenderer.material = blinkMaterialOn;
-                    yield return new WaitForSeconds(BLINK_DASH);
-
-                    blinkerRenderer.material = blinkMaterialOff;
-                    yield return new WaitForSeconds(BLINK_SPACE_LETTERS);
-                    blinkerRenderer.material = blinkMaterialOn;
-                    yield return new WaitForSeconds(BLINK_DOT);
-                    blinkerRenderer.material = blinkMaterialOff;
-                    yield return new WaitForSeconds(BLINK_SPACE_LOCAL);
-                    blinkerRenderer.material = blinkMaterialOn;
-                    yield return new WaitForSeconds(BLINK_DASH);
-                    blinkerRenderer.material = blinkMaterialOff;
-                    yield return new WaitForSeconds(BLINK_SPACE_LOCAL);
-                    blinkerRenderer.material = blinkMaterialOn;
-                    yield return new WaitForSeconds(BLINK_DOT);
-
-                    blinkerRenderer.material = blinkMaterialOff;
-                    yield return new WaitForSeconds(BLINK_SPACE_LETTERS);
-                    blinkerRenderer.material = blinkMaterialOn;
-                    yield return new WaitForSeconds(BLINK_DOT);
-                    blinkerRenderer.material = blinkMaterialOff;
-                    yield return new WaitForSeconds(BLINK_SPACE_LOCAL);
-                    blinkerRenderer.material = blinkMaterialOn;
-                    yield return new WaitForSeconds(BLINK_DASH);
-
-                    blinkerRenderer.material = blinkMaterialOff;
-                    yield return new WaitForSeconds(BLINK_SPACE_LETTERS);
-                    blinkerRenderer.material = blinkMaterialOn;
-                    yield return new WaitForSeconds(BLINK_DOT);
-                    blinkerRenderer.material = blinkMaterialOff;
-                    yield return new WaitForSeconds(BLINK_SPACE_LOCAL);
-                    blinkerRenderer.material = blinkMaterialOn;
-                    yield return new WaitForSeconds(BLINK_DOT);
-
-                    blinkerRenderer.material = blinkMaterialOff;
-                    yield return new WaitForSeconds(BLINK_SPACE_LETTERS);
-                    blinkerRenderer.material = blinkMaterialOn;
-                    yield return new WaitForSeconds(BLINK_DASH);
-                    blinkerRenderer.material = blinkMaterialOff;
-                    yield return new WaitForSeconds(BLINK_SPACE_LOCAL);
-                    blinkerRenderer.material = blinkMaterialOn;
-                    yield return new WaitForSeconds(BLINK_DOT);
-                    blinkerRenderer.material = blinkMaterialOff;
-                    yield return new WaitForSeconds(BLINK_SPACE_REPEAT);
-
-                    StartNewWordLoop(word);
-                }
-                break;
-            default:
-                if (currentLoop != null) StopCoroutine(currentLoop);   // in invalid OR COMPLETED cases don't run anything
-                break;
+    // refactored with ChatGPT (i % 2 == 0 is a clever move, other than that I was lazy and dead set on doing it manually)
+    // ... it still hallucinated a bit with the sequences above though
+    private IEnumerator BlinkSequence(Renderer blinkerRenderer, Material onMaterial, Material offMaterial, params float[] durations)
+    {
+        for (int i = 0; i < durations.Length; i++)
+        {
+            if (i == durations.Length - 1) blinkerRenderer.material = blinkMaterialEnd;
+            else blinkerRenderer.material = (i % 2 == 0) ? onMaterial : offMaterial;
+            yield return new WaitForSeconds(durations[i]);
         }
     }
 
