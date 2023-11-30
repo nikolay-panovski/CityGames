@@ -15,6 +15,8 @@ public class VisualAddScore : MonoBehaviour
     public float maxYPosOffset;
     public float animDuration;
 
+    private Sequence currentTweenSequence;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -24,17 +26,22 @@ public class VisualAddScore : MonoBehaviour
 
     public void ShowVisualScoreAdd(int addedScore)
     {
+        if (currentTweenSequence != null) currentTweenSequence.Complete(withCallbacks: true);
+
+        currentTweenSequence = DOTween.Sequence();
+
         bool isAddedScorePositive = addedScore > 0;
         text.text = isAddedScorePositive ? "+" + addedScore : "" + addedScore;
         Color usedColor = isAddedScorePositive ? maxColorGoodOn : maxColorBadOn;
 
-        DOTween.To(() => text.color, x => text.color = x, usedColor, animDuration).SetLoops(2, LoopType.Yoyo);
-        DOTween.To(() => text.gameObject.transform.position,
+
+        currentTweenSequence.Join(DOTween.To(() => text.color, x => text.color = x, usedColor, animDuration).SetLoops(2, LoopType.Yoyo));
+        currentTweenSequence.Join(DOTween.To(() => text.gameObject.transform.position,
                     x => text.gameObject.transform.position = x,
                     new Vector3(text.gameObject.transform.position.x,
                                 text.gameObject.transform.position.y - maxYPosOffset,
                                 text.gameObject.transform.position.z),
                     animDuration * 4).SetEase(Ease.OutQuart)
-                    .OnComplete(() => text.gameObject.transform.position = defaultPosition);
+                    .OnComplete(() => text.gameObject.transform.position = defaultPosition));
     }
 }
