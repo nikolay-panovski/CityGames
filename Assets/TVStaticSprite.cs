@@ -10,7 +10,7 @@ public class TVStaticSprite : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        targetRotation = coupledDial.dialRotation + 135f;
+        targetRotation = TVStaticDial.dialRotation + 135f;
         if (targetRotation > 360f) targetRotation -= 360f;
         if (targetRotation < 0f) targetRotation += 360f;
     }

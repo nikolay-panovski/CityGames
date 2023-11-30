@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
 public class TVStaticDial : MonoBehaviour
 {
@@ -9,7 +10,16 @@ public class TVStaticDial : MonoBehaviour
     private Collider thisCollider;
     public Camera mainCamera;
     public bool isRotatingDial;
-    public float dialRotation;
+    public static float dialRotation;
+
+    // guide arrow animation-related; of course very bad practice to keep in here
+    private static bool isFirstInteraction = false;
+    private Sequence currentTweenSequence;
+    public SpriteRenderer arrowSprite;
+    public Color defaultColorOff;
+    public Color defaultColorOn;
+    public float arrowsAnimDuration;
+    public float maxZPosOffset;
 
     void Start()
     {
@@ -33,6 +43,24 @@ public class TVStaticDial : MonoBehaviour
 
         if (isRotatingDial)
         {
+            if (isFirstInteraction == false)
+            {
+                if (currentTweenSequence != null) currentTweenSequence.Complete(withCallbacks: true);
+
+                currentTweenSequence = DOTween.Sequence();
+
+                currentTweenSequence.Join(DOTween.To(() => arrowSprite.color, x => arrowSprite.color = x, defaultColorOn, arrowsAnimDuration));
+                currentTweenSequence.Join(DOTween.To(() => arrowSprite.gameObject.transform.position,
+                                          x => arrowSprite.gameObject.transform.position = x,
+                                          new Vector3(arrowSprite.gameObject.transform.position.x,
+                                                      arrowSprite.gameObject.transform.position.y,
+                                                      arrowSprite.gameObject.transform.position.z + maxZPosOffset),
+                                          arrowsAnimDuration * 2).SetEase(Ease.Linear).SetLoops(4, LoopType.Yoyo));
+                currentTweenSequence.Append(DOTween.To(() => arrowSprite.color, x => arrowSprite.color = x, defaultColorOff, arrowsAnimDuration));
+
+                isFirstInteraction = true;
+            }
+
             float mouseMovement = Input.GetAxis("Mouse X");
             transform.rotation *= Quaternion.AngleAxis(mouseMovement, Vector3.up);
 
