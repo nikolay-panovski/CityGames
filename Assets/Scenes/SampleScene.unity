@@ -24558,7 +24558,7 @@ PrefabInstance:
         (Word
         2/3)
 
-        (X letters)'
+        (4 letters)'
       objectReference: {fileID: 0}
     - target: {fileID: 7388486863042781795, guid: ac6efc9eb5215344d99aeefcd16f17fc,
         type: 3}
@@ -30445,7 +30445,7 @@ PrefabInstance:
 
         (Word 1/3)
 
-        (X
+        (2
         letters)'
       objectReference: {fileID: 0}
     - target: {fileID: 7388486863042781795, guid: ac6efc9eb5215344d99aeefcd16f17fc,
@@ -52565,7 +52565,7 @@ PrefabInstance:
 
         (Word 3/3)
 
-        (X letters)'
+        (5 letters)'
       objectReference: {fileID: 0}
     - target: {fileID: 7388486863042781795, guid: ac6efc9eb5215344d99aeefcd16f17fc,
         type: 3}

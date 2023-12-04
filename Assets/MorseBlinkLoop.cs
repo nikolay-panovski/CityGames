@@ -41,7 +41,8 @@ public class MorseBlinkLoop : MonoBehaviour
                 case "it":
                     yield return BlinkSequence(blinkerRenderer, blinkMaterialOn, blinkMaterialOff,
                         BLINK_DOT, BLINK_SPACE_LOCAL, BLINK_DOT, BLINK_SPACE_LETTERS,
-                        BLINK_DASH, BLINK_SPACE_REPEAT);
+                        BLINK_DASH,
+                        BLINK_SPACE_LETTERS, BLINK_SPACE_REPEAT, BLINK_SPACE_LETTERS);
                     break;
 
                 case "city":
@@ -49,7 +50,8 @@ public class MorseBlinkLoop : MonoBehaviour
                         BLINK_DASH, BLINK_SPACE_LOCAL, BLINK_DOT, BLINK_SPACE_LOCAL, BLINK_DASH, BLINK_SPACE_LOCAL, BLINK_DOT, BLINK_SPACE_LETTERS,
                         BLINK_DOT, BLINK_SPACE_LOCAL, BLINK_DOT, BLINK_SPACE_LETTERS,
                         BLINK_DASH, BLINK_SPACE_LETTERS,
-                        BLINK_DASH, BLINK_SPACE_LOCAL, BLINK_DOT, BLINK_SPACE_LOCAL, BLINK_DASH, BLINK_SPACE_LOCAL, BLINK_DASH, BLINK_SPACE_REPEAT);
+                        BLINK_DASH, BLINK_SPACE_LOCAL, BLINK_DOT, BLINK_SPACE_LOCAL, BLINK_DASH, BLINK_SPACE_LOCAL, BLINK_DASH,
+                        BLINK_SPACE_LETTERS, BLINK_SPACE_REPEAT, BLINK_SPACE_LETTERS);
                     break;
 
                 case "train":
@@ -58,7 +60,8 @@ public class MorseBlinkLoop : MonoBehaviour
                         BLINK_DOT, BLINK_SPACE_LOCAL, BLINK_DASH, BLINK_SPACE_LOCAL, BLINK_DOT, BLINK_SPACE_LETTERS,
                         BLINK_DOT, BLINK_SPACE_LOCAL, BLINK_DASH, BLINK_SPACE_LETTERS,
                         BLINK_DOT, BLINK_SPACE_LOCAL, BLINK_DOT, BLINK_SPACE_LETTERS,
-                        BLINK_DASH, BLINK_SPACE_LOCAL, BLINK_DOT, BLINK_SPACE_REPEAT);
+                        BLINK_DASH, BLINK_SPACE_LOCAL, BLINK_DOT,
+                        BLINK_SPACE_LETTERS, BLINK_SPACE_REPEAT, BLINK_SPACE_LETTERS);
                     break;
 
                 default:
@@ -75,7 +78,7 @@ public class MorseBlinkLoop : MonoBehaviour
     {
         for (int i = 0; i < durations.Length; i++)
         {
-            if (i == durations.Length - 1) blinkerRenderer.material = blinkMaterialEnd;
+            if (i == durations.Length - 2) blinkerRenderer.material = blinkMaterialEnd;     // BLINK_SPACE_REPEAT before the loop, now separated with actual blanks
             else blinkerRenderer.material = (i % 2 == 0) ? onMaterial : offMaterial;
             yield return new WaitForSeconds(durations[i]);
         }
