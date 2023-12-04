@@ -14338,6 +14338,87 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e0f8fa703bcf04a419f5263f5020b059, type: 3}
+--- !u!1 &583299299 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5638865034277454350, guid: e0f8fa703bcf04a419f5263f5020b059,
+    type: 3}
+  m_PrefabInstance: {fileID: 583299298}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &583299300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 583299299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc17f089f52c52c479d3b6082dcd2b74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnQRCollect:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1813062549}
+        m_TargetAssemblyTypeName: UIScore, Assembly-CSharp
+        m_MethodName: AddPoints
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 10
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 271290141}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 819321531}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 692913704}
+        m_TargetAssemblyTypeName: GlobalInputHandler, Assembly-CSharp
+        m_MethodName: TogglePhoneDisplay
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 625736597}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1001 &587308117
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15064,7 +15145,7 @@ PrefabInstance:
     - target: {fileID: -6456603909707579729, guid: e2ba95120176ae9469627601538c98a0,
         type: 3}
       propertyPath: OnQRCollect.m_PersistentCalls.m_Calls.Array.size
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: -6456603909707579729, guid: e2ba95120176ae9469627601538c98a0,
         type: 3}
@@ -15088,6 +15169,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -6456603909707579729, guid: e2ba95120176ae9469627601538c98a0,
         type: 3}
+      propertyPath: OnQRCollect.m_PersistentCalls.m_Calls.Array.data[4].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: -6456603909707579729, guid: e2ba95120176ae9469627601538c98a0,
+        type: 3}
       propertyPath: OnQRCollect.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1813062549}
@@ -15108,6 +15194,11 @@ PrefabInstance:
       objectReference: {fileID: 692913704}
     - target: {fileID: -6456603909707579729, guid: e2ba95120176ae9469627601538c98a0,
         type: 3}
+      propertyPath: OnQRCollect.m_PersistentCalls.m_Calls.Array.data[4].m_Target
+      value: 
+      objectReference: {fileID: 583299299}
+    - target: {fileID: -6456603909707579729, guid: e2ba95120176ae9469627601538c98a0,
+        type: 3}
       propertyPath: OnQRCollect.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
       objectReference: {fileID: 0}
@@ -15124,6 +15215,11 @@ PrefabInstance:
     - target: {fileID: -6456603909707579729, guid: e2ba95120176ae9469627601538c98a0,
         type: 3}
       propertyPath: OnQRCollect.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -6456603909707579729, guid: e2ba95120176ae9469627601538c98a0,
+        type: 3}
+      propertyPath: OnQRCollect.m_PersistentCalls.m_Calls.Array.data[4].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: -6456603909707579729, guid: e2ba95120176ae9469627601538c98a0,
@@ -15148,6 +15244,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -6456603909707579729, guid: e2ba95120176ae9469627601538c98a0,
         type: 3}
+      propertyPath: OnQRCollect.m_PersistentCalls.m_Calls.Array.data[4].m_MethodName
+      value: SetActive
+      objectReference: {fileID: 0}
+    - target: {fileID: -6456603909707579729, guid: e2ba95120176ae9469627601538c98a0,
+        type: 3}
       propertyPath: OnQRCollect.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: UIScore, Assembly-CSharp
       objectReference: {fileID: 0}
@@ -15165,6 +15266,11 @@ PrefabInstance:
         type: 3}
       propertyPath: OnQRCollect.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
       value: GlobalInputHandler, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: -6456603909707579729, guid: e2ba95120176ae9469627601538c98a0,
+        type: 3}
+      propertyPath: OnQRCollect.m_PersistentCalls.m_Calls.Array.data[4].m_TargetAssemblyTypeName
+      value: UnityEngine.GameObject, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: -6456603909707579729, guid: e2ba95120176ae9469627601538c98a0,
         type: 3}
@@ -15193,6 +15299,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -6456603909707579729, guid: e2ba95120176ae9469627601538c98a0,
         type: 3}
+      propertyPath: OnQRCollect.m_PersistentCalls.m_Calls.Array.data[4].m_Arguments.m_BoolArgument
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -6456603909707579729, guid: e2ba95120176ae9469627601538c98a0,
+        type: 3}
       propertyPath: OnQRCollect.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
@@ -15209,6 +15320,11 @@ PrefabInstance:
     - target: {fileID: -6456603909707579729, guid: e2ba95120176ae9469627601538c98a0,
         type: 3}
       propertyPath: OnQRCollect.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: -6456603909707579729, guid: e2ba95120176ae9469627601538c98a0,
+        type: 3}
+      propertyPath: OnQRCollect.m_PersistentCalls.m_Calls.Array.data[4].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 6478666159539414054, guid: e2ba95120176ae9469627601538c98a0,
@@ -15291,6 +15407,12 @@ PrefabInstance:
 --- !u!4 &625736596 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9046731285892509680, guid: e2ba95120176ae9469627601538c98a0,
+    type: 3}
+  m_PrefabInstance: {fileID: 625736595}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &625736597 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6478666159539414054, guid: e2ba95120176ae9469627601538c98a0,
     type: 3}
   m_PrefabInstance: {fileID: 625736595}
   m_PrefabAsset: {fileID: 0}
